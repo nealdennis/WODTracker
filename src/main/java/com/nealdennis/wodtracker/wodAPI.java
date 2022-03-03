@@ -22,8 +22,8 @@ public class wodAPI {
 
     private void connectToDB() {
        try {
-           String psqlUrl = "jdbc:postgresql://ec2-3-230-238-86.compute-1.amazonaws.com:5432/d9no23iqh70hvk";
-           con = DriverManager.getConnection(psqlUrl, "ngwhobrszykulm", "ee0e0eb5d785096600b0c9b08a7f353dad7f0434a64c53c15310288057d3664c");
+           String psqlUrl = "jdbc:postgresql://localhost/database";
+           con = DriverManager.getConnection(psqlUrl, "", "");
 
            stmt = con.createStatement();
 
